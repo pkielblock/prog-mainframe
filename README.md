@@ -1,2 +1,2 @@
 # prog-mainframe
-Study at Fatec
+* COBOL Study at Fatec
