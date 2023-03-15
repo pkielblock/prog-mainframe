@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.
       *=======================*
-       PROGRAM-ID.   CSPRG003.
+       PROGRAM-ID.   CGPRG003.
        AUTHOR. CELSO GALLAO
        DATE-WRITTEN. 01-MAR-2023
        INSTALLATION. FATEC SAO CAETANO 
