@@ -79,7 +79,7 @@
       *--------------------------------------------------------------*
        010-INICIAR.
 
-           DISPLAY "ATIVIDADE 4"
+           DISPLAY "** ATIVIDADE 4 **"
            
            DISPLAY 'PEDRO'
            DISPLAY 'CALCULO DO PRECO DE VENDA DE UM TERRENO RETANGULAR'
