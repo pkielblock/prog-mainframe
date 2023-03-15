@@ -81,7 +81,7 @@
 
            DISPLAY "ATIVIDADE 4"
            
-           DISPLAY 'PEDRO' 20230308
+           DISPLAY 'PEDRO'
            DISPLAY 'CALCULO DO PRECO DE VENDA DE UM TERRENO RETANGULAR'
            DISPLAY 'DATA DO CALCULO: ' AS-DATA (7:2) "/"
                AS-DATA (5:2) "/" "2" AS-DATA (2:3)
