@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.
       *=======================*
-       PROGRAM-ID.   CSPRG002.
+       PROGRAM-ID.   CGPRG002.
        AUTHOR. CELSO D. GALLAO
        DATE-WRITTEN. 15-FEB-2023
       *--------------------------------------------------------------*
