@@ -1,10 +1,10 @@
        IDENTIFICATION DIVISION.
       *=======================*
-       PROGRAM-ID.   CGPRG003.
-       AUTHOR. CELSO GALLAO.
-       DATE-WRITTEN. 01-MAR-2023.
-       INSTALLATION. FATEC SAO CAETANO.
-       DATE-COMPILED. 01-MAR-2023.
+       PROGRAM-ID.   CSPRG003.
+       AUTHOR. CELSO GALLAO
+       DATE-WRITTEN. 01-MAR-2023
+       INSTALLATION. FATEC SAO CAETANO
+       DATE-COMPILED. 01-MAR-2023
        SECURITY. NIVEL BASICO.
       *--------------------------------------------------------------*
        ENVIRONMENT DIVISION.
@@ -35,7 +35,7 @@
        77  AS-N1                  PIC 99V99.
        77  AS-N2                  PIC 99V99.
        77  AS-MED                  PIC 99V99.
-      
+
       *-----> DADOS DE SAIDA VIA SYSOUT
        01  WS-REG-SYSOUT.
            05 WS-ALUNO            PIC A(25).
@@ -45,8 +45,7 @@
            05 FILLER              PIC X(02) VALUE SPACES.
            05 WS-NOTA2            PIC Z9,99.
            05 FILLER              PIC X(02) VALUE SPACES.
-           05 WS-MEDIA            PIC Z9,99.     
-
+           05 WS-MEDIA            PIC Z9,99.
        LINKAGE SECTION.
       *----------------*
        01  LK-PARAMETROS.
@@ -84,7 +83,7 @@
            MOVE 'ZE GABARITO JR '  TO   WS-ALUNO
            MOVE 1680481117111      TO   WS-RA
            MOVE 7,25               TO   AS-N1
-           MOVE 10,00              TO   AS-N2
+           MOVE 9,75               TO   AS-N2
            COMPUTE AS-MED = (AS-N1 + AS-N2) / 2
            MOVE AS-N1              TO   WS-NOTA1
            MOVE AS-N2              TO   WS-NOTA2
@@ -101,4 +100,4 @@
            DISPLAY "REGISTROS EXIBIDOS = " WS-CTEXIB
            DISPLAY "TERMINO NORMAL DO PROGRAMA CGPRG003"
            .
-      *---------------> FIM DO PROGRAMA CGPRG002 <-------------------*
+      *---------------> FIM DO PROGRAMA CGPRG003 <-------------------*

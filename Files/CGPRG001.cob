@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.
       *=======================*
-       PROGRAM-ID.   CGPRG001.
+       PROGRAM-ID.   CSPRG001.
       * AUTOR .........: CELSO D. GALLAO.
       * DATA DE CRIACAO: 15/02/2023.
       *--------------------------------------------------------------*
@@ -71,11 +71,11 @@
        030-PROCESSAR.
 
            DISPLAY '** PEDRO **'
-
+           DISPLAY 'PUXA COMO ESTOU FELIZ'
            MOVE 'CELSO D. GALLAO ' TO   WS-NOME
            MOVE 'A.D.S '           TO   WS-DPTO
            MOVE 'PROFESSOR'        TO   WS-FUNCAO
-           MOVE  1200,00           TO   WS-SALARIO
+           MOVE  5000,99           TO   WS-SALARIO
 
            DISPLAY WS-REG-SYSOUT
            ADD   1               TO   WS-CTEXIB

@@ -1,8 +1,8 @@
        IDENTIFICATION DIVISION.
       *=======================*
        PROGRAM-ID.   CGPRG002.
-       AUTHOR. CELSO D. GALLAO
-       DATE-WRITTEN. 15-FEB-2023
+       AUTHOR.       CELSO GALLAO.
+       DATE-WRITTEN. 08/03/2023.
       *--------------------------------------------------------------*
        ENVIRONMENT DIVISION.
       *====================*
@@ -33,7 +33,7 @@
       *-----> DADOS DE SAIDA VIA SYSOUT
        01  WS-REG-SYSOUT.
            05 WS-ALUNO            PIC A(25).
-           05 WS-RA               PIC 9(13).
+           05 WS-RA               PIC X(13).
            05 WS-NOTA1            PIC Z9V99.
            05 WS-NOTA2            PIC Z9V99.
            05 FILLER              PIC X(24)       VALUE SPACES.
@@ -61,7 +61,7 @@
       *--------------------------------------------------------------*
        010-INICIAR.
 
-           DISPLAY "** PROGRAMA 2 **"
+           DISPLAY "** PROGRAMA 02 **"
 
            MOVE  ZEROS  TO  WS-CTEXIB
            .
@@ -70,12 +70,12 @@
       *--------------------------------------------------------------*
        030-PROCESSAR.
 
-           DISPLAY '** PEDRO - HENRIQUE **'
+           DISPLAY 'NOME: LUANA E RICARDINO'
 
-           MOVE 'ZE GABARITO JR '  TO   WS-ALUNO
-           MOVE 1680481117111      TO   WS-RA
-           MOVE 7,25               TO   WS-NOTA1
-           MOVE 10,00              TO   WS-NOTA2
+           MOVE 'ZE GABARITO JR'  TO   WS-ALUNO
+           MOVE  1680481117111    TO   WS-RA
+           MOVE  7,25             TO   WS-NOTA1
+           MOVE  10,00            TO   WS-NOTA2
 
            DISPLAY WS-REG-SYSOUT
            ADD   1               TO   WS-CTEXIB
@@ -87,7 +87,8 @@
        050-TERMINAR.
 
            DISPLAY '** FIM DA EXECUCAO **'
+
            DISPLAY "REGISTROS EXIBIDOS = " WS-CTEXIB
-           DISPLAY "TERMINO NORMAL DO PROGRAMA CGPRG002"
+           DISPLAY "TERMINO NORMAL DO PROGRAMA CGRPG002 "
            .
-      *---------------> FIM DO PROGRAMA CGPRG002 <-------------------*
+      *---------------> FIM DO PROGRAMA CGRPG002 <-------------------*

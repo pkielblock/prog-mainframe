@@ -2,13 +2,13 @@
       *=======================*
        PROGRAM-ID.   CSPRG004.
        AUTHOR. CELSO GALLAO.
-       DATE-WRITTEN. 20-FEV-2023.
        INSTALLATION. FATEC SAO CAETANO.
+       DATE-WRITTEN. 20-FEV-2023.
        DATE-COMPILED. 22-MAR-2023.
        SECURITY. NIVEL BASICO.
-      *--------------------------------------------------------------*
+      *---------------------*
        ENVIRONMENT DIVISION.
-      *====================*
+      *======================*
        CONFIGURATION SECTION.
       *---------------------*
        SPECIAL-NAMES.
@@ -59,10 +59,6 @@
 
        LINKAGE SECTION.
       *----------------*
-       01  LK-PARAMETROS.
-           05 LK-NR-DPTO             PIC 9(04).
-           05 LK-NOME-DPTO           PIC X(15).
-           05 LK-COD-RETORNO         PIC 99.
       *
        PROCEDURE DIVISION.
       *==================*
@@ -71,7 +67,7 @@
       *--------------------------------------------------------------*
            ACCEPT AS-DATA FROM DATE
            ACCEPT AS-HORA FROM TIME
-           
+
            PERFORM 010-INICIAR
            PERFORM 030-PROCESSAR UNTIL WS-FIM = 'S'
            PERFORM 050-TERMINAR
@@ -82,8 +78,8 @@
       *--------------------------------------------------------------*
        010-INICIAR.
 
-           DISPLAY "** ATIVIDADE 4 **"
-           
+           DISPLAY "ATIVIDADE 4"
+
            DISPLAY 'PEDRO'
            DISPLAY 'CALCULO DO PRECO DE VENDA DE UM TERRENO RETANGULAR'
            DISPLAY 'DATA DO CALCULO: ' AS-DATA (7:2) "/"
@@ -99,7 +95,7 @@
 
            MOVE  09000300           TO   AS-CEP
            MOVE  12,35              TO   AS-FRENTE
-           MOVE  52,00              TO   AS-COMP
+           MOVE  62,00              TO   AS-COMP
            MOVE  2315,00            TO   AS-VAL-M2
            COMPUTE AS-VAL-VENDA = (AS-FRENTE * AS-COMP * AS-VAL-M2)
            IF AS-VAL-VENDA > 1500000,00
@@ -107,9 +103,9 @@
                MOVE 'ALTO PADRAO' TO WS-MENSAGEM
            ELSE
                COMPUTE AS-COMISSAO = AS-VAL-VENDA * 0,06
-               MOVE 'MEDIO PADRAO' TO WS-MENSAGEM  
+               MOVE 'MEDIO PADRAO' TO WS-MENSAGEM
            END-IF
-           
+
            MOVE AS-CEP             TO WS-CEP
            MOVE AS-FRENTE          TO WS-FRENTE
            MOVE AS-COMP            TO WS-COMP
@@ -125,10 +121,10 @@
       *    PROCEDIMENTOS FINAIS                                      *
       *--------------------------------------------------------------*
        050-TERMINAR.
-           
+
            DISPLAY '---------------------------------------------------'
            DISPLAY '** ENCERRANDO A EXECUCAO **'
            DISPLAY "REGISTROS EXIBIDOS = " WS-CTEXIB
            DISPLAY "TERMINO NORMAL DO PROGRAMA CGPRG004"
            .
-      *---------------> FIM DO PROGRAMA CGPRG001 <-------------------*
+      *---------------> FIM DO PROGRAMA CGPRG004 <-------------------*

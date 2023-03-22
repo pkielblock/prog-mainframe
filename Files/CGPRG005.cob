@@ -34,7 +34,6 @@
            05  WS-SOMAMEDIAS          PIC 999V99.
            05  WS-SOUTMDMEDIAS        PIC 99,99.
        01  WS-SOUTPCT                 PIC Z9,99.
-       01  FILLER                     PIC X(2) VALUE '% '.
       *-----> ENTRADA - DADOS VIA SYSIN (NO JCL DE EXECUCAO)
        01  WS-REG-SYSIN.
            05 WS-NUMERO-IN        PIC 9(04).
@@ -148,7 +147,7 @@
            DISPLAY ' * TOTAL HOMENS.....: ' WS-TOTALM
            DISPLAY ' * MEDIA GERAL DOS ALUNOS......: ' WS-SOUTMDMEDIAS
            DISPLAY ' * TOTAL DE ALUNOS COM MEDIA < 6: ' WS-ABAIXOMEDIA
-           DISPLAY ' * % DE ALUNOS COM MEDIA < 6....: ' WS-SOUTPCT
+           DISPLAY ' * % DE ALUNOS COM MEDIA < 6....: ' WS-SOUTPCT '%'
            DISPLAY ' *========================================*'
            DISPLAY ' *----------------------------------------*'
            DISPLAY ' *      TERMINO NORMAL DO CGPRG005        *'
