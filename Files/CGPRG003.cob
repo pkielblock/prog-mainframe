@@ -1,10 +1,10 @@
        IDENTIFICATION DIVISION.
       *=======================*
        PROGRAM-ID.   CGPRG003.
-       AUTHOR. CELSO GALLAO
-       DATE-WRITTEN. 01-MAR-2023
-       INSTALLATION. FATEC SAO CAETANO 
-       DATE-COMPILED. 01-MAR-2023
+       AUTHOR. CELSO GALLAO.
+       DATE-WRITTEN. 01-MAR-2023.
+       INSTALLATION. FATEC SAO CAETANO.
+       DATE-COMPILED. 01-MAR-2023.
        SECURITY. NIVEL BASICO.
       *--------------------------------------------------------------*
        ENVIRONMENT DIVISION.
