@@ -1,8 +1,11 @@
        IDENTIFICATION DIVISION.
       *=======================*
        PROGRAM-ID.   CSPRG004.
-      * AUTOR .........: CELSO D. GALLAO.
-      * DATA DE CRIACAO: 08/03/2023.
+       AUTHOR. CELSO GALLAO.
+       DATE-WRITTEN. 01-MAR-2023.
+       INSTALLATION. FATEC SAO CAETANO.
+       DATE-COMPILED. 01-MAR-2023.
+       SECURITY. NIVEL BASICO.
       *--------------------------------------------------------------*
        ENVIRONMENT DIVISION.
       *====================*
